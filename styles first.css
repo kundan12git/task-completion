@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+nav{position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #333;
+padding: 15px 0;
+transition: backgroun 0.3s ease;
+z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, backgroun 0.3 ease;
+}
+
+nav ul li a:hover{
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+nav.scrolled{
+    background: #222;
+}
+
+section {
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
